@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.reto11.PrimaryController">
+   <children>
+      <ImageView fitHeight="46.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Desktop/FNgXOrDWYAEN-Wy.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="373.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="68.0" layoutY="10.0" mnemonicParsing="false" onAction="#promedio" prefWidth="100.0" text="Promedio" />
+            <Label fx:id="mostrarTexto" layoutX="85.0" layoutY="205.0" prefHeight="17.0" prefWidth="167.0" text="El resultado se mostrará aqui." />
+            <Button layoutX="68.0" layoutY="80.0" mnemonicParsing="false" onAction="#mayorPrecio" prefWidth="100.0" text="Mayor precio" />
+            <Button layoutX="68.0" layoutY="45.0" mnemonicParsing="false" onAction="#desviacionEstandar" prefWidth="100.0" text="Desv. Estandar" />
+            <Button layoutX="68.0" layoutY="115.0" mnemonicParsing="false" onAction="#menorPrecio" prefWidth="100.0" text="Menor precio" />
+            <TableView fx:id="tablaDatos" layoutX="323.0" prefHeight="374.0" prefWidth="278.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button layoutX="68.0" layoutY="150.0" mnemonicParsing="false" prefWidth="100.0" text="Line Chart" />
+            <Label fx:id="mostrarFecha" layoutX="85.0" layoutY="235.0" prefHeight="17.0" prefWidth="161.0" text=" " />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
